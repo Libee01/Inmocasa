@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/inicio_registro.css">
+    <title>Listar pisos</title>
+    <script src="../js/inicio_invitado.js"></script>
+</head>
+<body>
+    <div id="titulo">
+      <a href="../index.php"><img src="../img/logoinmo.png" id="logo"></a>
+    <div id="menu1">
+        <ul class="nav">
+            <li><a><img src="../img/iniciarsesion.png" id="imgsesion"></a>
+                <ul>
+                    <li class="lista1"><a href="inicio_invitado.html">Iniciar Sesión</a></li>
+                    <li class="lista1"><a href="registro_invitado.html">Registrarse</a></li>
+                </ul>
+            </li>
+        </ul>
+	</div>
+    </div>
+    <div class="formulario" id="loginForm2" onsubmit="return validar1()">
+        <form action="../php/login.php" method="post">
+            <fieldset>
+            <legend><span>Iniciar Sesión</span></legend>
+                <input type="text" placeholder="Correo" id="correo" name="email" class="usu" required>
+                <input type="password" placeholder="Contraseña" id="pass" class="usu" name="password" required><br><br>
+                <button type="submit" class="boton">Iniciar Sesión</button>
+                <button type="reset" class="boton">Borrar</button>
+                <br>
+                <br>
+                <b>No tienes una cuenta?</b> <a href="./registro_invitado.html">Registrarse</a>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+</html>

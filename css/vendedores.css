@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(174,105,56);
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+#titulo{
+    text-align: center;
+    padding-top: 3em;
+    border: 0px solid blue;
+    height: auto;
+    width: auto;
+    float: left;
+    margin-left: 41em;
+    margin-bottom: 2em;
+}
+#logo{
+    width: 35em;
+    border:0px yellow solid;
+    margin-left: 0em;
+}
+
+#menu1 {	
+    border: solid 0em rgb(67, 15, 119);
+    padding-left: 0em;
+    margin: 0.5em 2em 0 23em ;
+    clear: both;
+    }	
+    
+    #menu1 ul  {
+    list-style: none;
+    margin: 0;
+    }
+    
+    #menu1 ul li {
+    margin: 0;
+    float: left;
+    }
+    
+    #menu1 ul li a {
+    margin:0 3em;
+    width: 10em;
+    font-weight:bold;
+    font-size:1.2em;
+    text-align: center;
+    line-height: 2em;
+    display:block;
+    text-decoration: none
+    }
+    
+    #menu1 ul li a:hover {
+   color:brown;
+    }
+    a{
+    color:white;
+    }
+    a:hover{
+    background-color:rgba(255, 192, 203);
+    border-radius: 1em;
+    color:brown;
+    }
+    .cerrar_sesion {
+        width: 1em;
+    }
+    .nada{
+        width: auto;
+    }
+    .nada:hover{
+        background-color: transparent;
+    }
+#formulario{
+    border:0em solid black;
+    clear: both;
+    height: 30em;
+    width: 54.2em;
+    margin: 2em 0em 0 32.5em;
+    text-align: center;
+    padding-top: 2em;
+   margin-bottom: 1em;
+
+}
+input{
+    background-color: white;
+    margin-top: 01em;
+    color:black;
+    text-align: center;
+}
+fieldset{
+    border:rgb(150, 73, 1) solid 0.2em;
+    margin-right: 10em;
+    margin-left: 10em;
+    height: auto;
+}
+span{
+    font-size: 2em;
+    font-weight: bold;
+    color:white;
+
+}
+.usu{
+    margin-top: 1.2em;
+    width: 20em;
+    font-size: 1em;
+}
+
+.boton{
+    margin-bottom: 1em;
+    height: 2em;
+    width: 9em;
+    font-size: 1em;
+    font-weight: bold;
+    background:rgb(150, 73, 1);
+    color:white; 
+}
+
+.boton:hover{
+    background-color:transparent;
+}
+/*--------------------------*/
+table{
+    
+    clear: both;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    
+}
+td{
+    border-right: rgb(150, 73, 1) solid 0.3em;
+    border-bottom: rgb(150, 73, 1) solid 0.3em;
+    border-top: none;
+    border-left: none;
+    color:black;
+    text-align: left;
+    padding: 1em 5em 1em 3em;
+
+    }
+th{
+    border-right: rgb(150, 73, 1) solid 0.3em;
+    border-bottom: rgb(150, 73, 1) solid 0.3em;
+    border-top: none;
+    border-left: none;
+    color: rgb(150, 73, 1);
+    background-color: white;
+    width:fit-content;
+}
+.datos {
+    width: 15em;
+}
+.imgpiso{
+    width: 30em;
+}
+.cerrar_sesion {
+    width: 1em;
+}
+.nada{
+    width: auto;
+    margin-left: 0em;
+}
+.nada:hover{
+    background-color: transparent;
+}
+#tabla {
+    border:solid gray 0em;
+    width:fit-content;
+    height: fit-content;
+    text-align: center;
+    background-color: #fff;
+    margin-left: 21em;
+    border-radius: 0.1em;
+    margin-top: 6em;
+    clear: both;
+}
+.nadalogo:hover {
+    background-color: transparent;
+}
+b{
+    color:black;
+}
+button {
+    background-color: rgba(126, 124, 124, 0.411);
+    padding: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    border-radius: 0.3em;
+    
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, rgba(146, 78, 0, 0.61), rgba(255, 255, 255, 0.2)); /* Cambia el degradado cuando se pasa el cursor */
+    box-shadow: inset 0 0 0.9em rgba(255, 255, 255, 0.3); /* Sombras interiores */
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.imgpiso{
+    width: 32em;
+}

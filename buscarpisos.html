@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/csspisos.css">
+    <title>Buscar piso</title>
+    <script src="js/buscar_pisos.js"></script>
+</head>
+<body>
+    <div id="titulo">
+        <a href="./index.php" class="nada"> <img src="./img/logoinmo.png" id="logo"></a>
+     </div>
+     <div id="menu1">
+             <ul>
+                 <li>
+                     <a href="./php/pisos/listarpiso.php">INICIO</a>
+                 </li>
+         
+                 <li>
+                     <a href="./buscarpisos.html">BUSCAR</a>
+                 </li>
+                 <li>
+                    <a href="./php/pisos/carrito.php">CARRITO</a>
+                </li>
+                 <li>
+                     <a href="./index.php" class="nada"><img src="./img/cerrar_sesion.png" alt="" class="cerrar_sesion"></a>
+                 </li>
+             </ul>
+     </div>
+	</div>
+    <div id="formulario">
+        <form action="./php/pisos/buscarpiso.php" method="POST" onsubmit="return validar()">
+            <fieldset>
+                <legend><span>Buscar piso</span></legend>
+                <input type="text" placeholder="Zona" id="zona" name="textzona" class="usu"><br><br>
+                <input type="submit" value="Buscar" name="entrar" class="boton">
+                <input type="reset" value="Borrar" class="boton">
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>

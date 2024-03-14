@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Registrarse en Inmocasa</title>
+			<meta charset="utf-8"/>
+			<!--<link href="CSS/registro.css" rel="Stylesheet" type="text/css" media="screen"/>-->
+			<link rel="stylesheet" href="../css/inicio_registro.css">
+			<script src="js/registro.js"></script>
+		</head>
+		<body>
+			<div id="titulo">
+				<a href="../index.php"><img src="../img/logoinmo.png" id="logo"></a>
+			  <div id="menu1">
+				  <ul class="nav">
+					  <li><a><img src="../img/iniciarsesion.png" id="imgsesion"></a>
+						  <ul>
+							  <li class="lista1"><a href="inicio_invitado.html">Iniciar Sesión</a></li>
+							  <li class="lista1"><a href="registro_invitado.html">Registrarse</a></li>
+						  </ul>
+					  </li>
+				  </ul>
+			  </div>
+			  </div>
+			<div class="formulario1">
+					<form action="../php/registro.php" method="POST" onsubmit="return validar()">
+						<fieldset>
+							<legend><span>Registrarse</span></legend>
+							<input type="text" placeholder="Escriba su usuario" name="user" id="usuario" class="usu" required>
+							<input type="text" name="email" size="30" placeholder="Escriba su correo" id="correo" class="usu" required>
+							<input type="password" name="password" placeholder="Escriba su contraseña" id="pass" class="usu" required><br><br>
+							<b>Quieres registrarte como:</b>
+								<select name="tipo_usuario" class="usu">
+									<option value="comprador" class="usu">Comprador</option>
+									<option value="vendedor" class="usu">Vendedor</option>
+								</select><br><br>
+							
+								<input type="submit" value="Registrarse" class="boton">
+								<input type="reset" value="Borrar" class="boton">
+								<br>
+								<br>
+								<b>Ya tienes una cuenta?</b> <a href="./inicio_invitado.html">Iniciar sesión</a>
+							
+							</fieldset>
+					</form>
+				
+			</div>
+		</body>
+	</html>

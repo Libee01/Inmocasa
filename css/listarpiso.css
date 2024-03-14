@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(174,105,56);
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+#titulo{
+    text-align: center;
+    padding-top: 3em;
+    border: 0px solid blue;
+    height: auto;
+    width: auto;
+    float: left;
+    margin-left: 41em;
+    margin-bottom: 1em;
+}
+#logo{
+    width: 35em;
+    border:0px yellow solid;
+    margin-left: 0em;
+}
+
+#php {
+    margin: 0;
+    padding: 0;
+    /*background-image: url("../img/fondoindex2.jpg");*/
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+table{
+    
+    clear: both;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    
+}
+td{
+    border-right: rgb(150, 73, 1) solid 0.3em;
+    border-bottom: rgb(150, 73, 1) solid 0.3em;
+    border-top: none;
+    border-left: none;
+    color:black;
+    text-align: left;
+    /*padding: 1em 5em 1em 5em;*/
+
+    }
+th{
+    border-right: rgb(150, 73, 1) solid 0.3em;
+    border-bottom: rgb(150, 73, 1) solid 0.3em;
+    border-top: none;
+    border-left: none;
+    color: rgb(150, 73, 1);
+    background-color: white;
+    width:fit-content;
+}
+.datos {
+    width: 15em;
+    padding: 1em 3em 1em 5em;
+}
+.imgpiso{
+    width: 38em;
+}
+.anadir {
+    width: 10em;
+    padding-left: 5em;
+
+}
+.anadir1 {
+    width: 15em;
+    padding-left: 4em;
+
+}
+
+#menu1 {	
+border: solid 0em rgb(67, 15, 119);
+padding-left: 0em;
+margin: 0.5em 10em 0em 19em ;
+clear: both;
+
+}	
+
+#menu1 ul  {
+list-style: none;
+margin: 0;
+}
+
+#menu1 ul li {
+margin: 0;
+float: left;
+}
+
+#menu1 ul li a {
+margin:0 5em;
+width: 8em;
+font-weight:bold;
+font-size:1.2em;
+text-align: center;
+line-height: 44px;
+display:block;
+text-decoration: none
+}
+
+#menu1 ul li a:hover {
+    color:brown;
+}
+a{
+color:white;
+}
+a:hover{
+    background-color:rgba(255, 192, 203);
+    border-radius: 1em;
+    color:brown;
+}
+a .no:hover{
+    background-color: transparent;
+}
+
+.cerrar_sesion {
+    width: 1em;
+}
+.cerrar_sesion1 {
+    width: 1.5em;
+    margin-top: 7em;
+    margin-left: 15em;
+}
+.nada{
+    width: auto;
+    margin-left: 0em;
+}
+.nada:hover{
+    background-color: transparent;
+}
+#tabla {
+    border:solid gray 0em;
+    width:fit-content;
+    height: fit-content;
+    text-align: center;
+    background-color: #fff;
+    margin-left: 21em;
+    border-radius: 0.1em;
+    margin-top: 6em;
+    clear: both;
+}
+.tabla1{
+    border:solid gray 0em;
+    width:fit-content;
+    height: fit-content;
+    text-align: center;
+    background-color: #fff;
+    margin-left: 21em;
+    border-radius: 0.1em;
+    margin-top: 2em;
+    clear: both;
+}
+.nadalogo:hover {
+    background-color: transparent;
+}
+.tabla2{
+    border:solid gray 0em;
+    width:fit-content;
+    height: fit-content;
+    text-align: center;
+    background-color: #fff;
+    margin-left: 40em;
+    border-radius: 0.1em;
+    margin-top: 3em;
+    clear: both;
+}
+b{
+    color:black;
+}
+button {
+    background-color: rgba(126, 124, 124, 0.411);
+    padding: 2px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    border-radius: 0.3em;
+    
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, rgba(146, 78, 0, 0.61), rgba(255, 255, 255, 0.2)); /* Cambia el degradado cuando se pasa el cursor */
+    box-shadow: inset 0 0 0.9em rgba(255, 255, 255, 0.3); /* Sombras interiores */
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#filtrar{
+    clear:both;
+    text-align: center;
+
+}
+input{
+    color:black;
+}
+.error-message {
+    color: white;
+    padding-top: 2em;
+    padding-left: 5em;
+    background-color:rgb(174,105,56);
+    font-size: 3em;
+}
+.imgpison {
+    width: 20em;
+}
