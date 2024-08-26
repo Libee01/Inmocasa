@@ -54,8 +54,8 @@
   <br><br>
   Si restauras la copia de la base de datos, vendrán por defecto 3 usuarios creados:
   <br><br>
-  🔸admin@admin.es: admin   tipo_usuario -> administrador
+  🔸admin@admin.es: admin -> tipo_usuario: administrador
   <br><br>
-  🔸comprador@comprador.es: usuario1   tipo_usuario -> comprador
+  🔸comprador@comprador.es: usuario1 -> tipo_usuario: comprador
   <br><br>
-  🔸vendedor@vendedor.es: usuario2    tipo_usuario -> vendedor
+  🔸vendedor@vendedor.es: usuario2 -> tipo_usuario: vendedor
