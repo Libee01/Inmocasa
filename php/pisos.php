@@ -1,10 +1,22 @@
+<?php
+session_start();
+    
+// Verificar si el usuario no está autenticado
+if($_SESSION['loggedin'] !== true || $_SESSION['tipousu'] !== 'administrador'){
+    // Redirigir a la página de inicio de sesión
+    header("Location: ../index.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pisos</title>
     <link rel="stylesheet" href="../css/listarpiso.css">
+    <link rel="icon" href="../img/logo.ico" type="image/x-icon">
+    <title>Pisos</title>
 </head>
 <body>
     <div id="titulo">
@@ -47,7 +59,7 @@
         $nfilas = mysqli_num_rows($consulta); //devuelve el numero de filas
 
         if ($nfilas == 0) {
-            echo "Error el piso no existe";
+            echo "<p class='error-message2'>No hay pisos en venta asociados a ese usuario</p>";
         } else {
             echo "<table border='1'>";
             echo "<tr><th>Calle</th><th>Imagen</th><th>Acción</th></tr>";
@@ -55,7 +67,7 @@
             while ($resultado = mysqli_fetch_array($consulta)) {
                 echo "<tr>";
                 echo "<td class='datos'>". "<ul style='color:black; font-size:1.2em;'><b>Ubicado en</b></ul>". 
-                "<li style='color:black;'><b>Código Piso: </b>". $resultado['Codigo_piso'] ."</li>".
+                "<li style='color:black;'><b>Código Piso: </b>". $resultado['codigo_piso'] ."</li>".
                 "<li style='color:black;'><b>Calle: </b>". $resultado['calle'] ."</li>".
                 "<li style='color:black;'><b>Número: </b>". $resultado['numero'] ."</li>".
                 "<li style='color:black;'><b>Piso: </b>". $resultado['piso'] ."</li>".
@@ -64,14 +76,14 @@
                 "<li style='color:black;'><b>Metros: </b>". $resultado['metros'] ."</li>".
                 "<li style='color:black;'><b>Zona: </b>". $resultado['zona'] ."</li>".
                 "<li style='color:black;'><b>Precio: </b>". $resultado['precio'] ."</li>".
-                "<li style='color:black;'><b>Codigo usuario: </b>". $resultado['usuario_id'] ."</li>".
+                "<li style='color:black;'><b>Código usuario: </b>". $resultado['usuario_id'] ."</li>".
                 "</td>";
                 echo "<td class='imgpiso'><img class='imgpiso' src='./pisos/img/" . $resultado['imagen'] . "'/></td>";
                 echo "<td class='anadir'><form action='./pisos/modificarpiso.php' method='POST'>
-                <input type='hidden' name='id_piso' value='" . $resultado['Codigo_piso'] . "'>
+                <input type='hidden' name='id_piso' value='" . $resultado['codigo_piso'] . "'>
                 <button type='submit'>Modificar piso</button></form><br>
                 <form action='./pisos/borrarpiso.php' method='POST'>
-                <input type='hidden' name='id_piso' value='" . $resultado['Codigo_piso'] . "'>
+                <input type='hidden' name='id_piso' value='" . $resultado['codigo_piso'] . "'>
                 <button type='submit'>Borrar piso</button></form>
                 </td>";
                 echo "</tr>";

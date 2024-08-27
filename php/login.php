@@ -18,6 +18,7 @@ $nfilas = mysqli_num_rows($consulta);
             // Iniciar la sesión
             session_start();
             $tipo = $row['tipo_usuario'];
+            $_SESSION['tipousu'] = $row['tipo_usuario'];
             $_SESSION['loggedin'] = true;
             $_SESSION['name'] = $row['nombres'];
             $_SESSION['userid'] = $row['usuario_id'];

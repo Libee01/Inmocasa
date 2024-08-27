@@ -1,14 +1,25 @@
+<?php
+session_start();
+    
+// Verificar si el usuario no está autenticado
+if($_SESSION['loggedin'] !== true || $_SESSION['tipousu'] !== 'administrador'){
+    // Redirigir a la página de inicio de sesión
+    header("Location: ../index.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuarios</title>
     <link rel="stylesheet" href="../css/listarpiso.css">
+    <link rel="icon" href="../img/logo.ico" type="image/x-icon">
+    <title>Usuarios</title>
 </head>
 <body>
     <div id="titulo">
-       <a href="./admin.php" class="nada" > <img src="../img/logoinmo.png" id="logo"></a>
+       <a href="./admin.php" class="nada"> <img src="../img/logoinmo.png" id="logo"></a>
        
     </div>
     <a href="../index.php" class="nada"> <img src="../img/cerrar_sesion.png" class="cerrar_sesion1"> </a>
@@ -65,7 +76,7 @@
                 "<li style='color:black;'><b>Nombre: </b>". $resultado['nombres'] ."</li>".
                 "<li style='color:black;'><b>Correo: </b>". $resultado['correo'] ."</li>".
                 "<li style='color:black;'><b>Clave: </b>". $resultado['clave'] ."</li>".
-                "<li style='color:black;'><b>Tipo de usuario</b>". $resultado['tipo_usuario'] ."</li>".
+                "<li style='color:black;'><b>Tipo de usuario: </b>". $resultado['tipo_usuario'] ."</li>".
                 "</td>";
                 echo "<td class='anadir1'><form action='./usuarios/modificarusu.php' method='POST'>
                 <input type='hidden' name='id_usuario' value='" . $resultado['usuario_id'] . "'>

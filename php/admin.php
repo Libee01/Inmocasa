@@ -2,7 +2,7 @@
     session_start();
     
     // Verificar si el usuario no está autenticado
-    if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true){
+    if($_SESSION['loggedin'] !== true || $_SESSION['tipousu'] !== 'administrador'){
         // Redirigir a la página de inicio de sesión
         header("Location: ../index.php");
         exit;
@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
     <script src="../js/index.js"></script>
+    <link rel="icon" href="../img/logo.ico" type="image/x-icon">
     <title>Administración</title>
 </head>
 <body>
@@ -35,3 +36,4 @@
 </div>
 </body>
 </html>
+
