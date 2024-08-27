@@ -4,6 +4,7 @@
     color: #fff;
     font-family: Arial, sans-serif;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -12,6 +13,7 @@ body{
     color: #fff;
     font-family: Arial, sans-serif;
 }
+
 #titulo{
     text-align: center;
     padding-top: 3em;
@@ -22,6 +24,7 @@ body{
     margin-left: 41em;
     margin-bottom: 2em;
 }
+
 #logo{
     width: 35em;
     border:0px yellow solid;
@@ -76,6 +79,7 @@ body{
     .nada:hover{
         background-color: transparent;
     }
+
 #formulario{
     border:0em solid black;
     clear: both;
@@ -87,24 +91,28 @@ body{
    margin-bottom: 1em;
 
 }
+
 input{
     background-color: white;
     margin-top: 01em;
     color:black;
     text-align: center;
 }
+
 fieldset{
     border:rgb(150, 73, 1) solid 0.2em;
     margin-right: 10em;
     margin-left: 10em;
     height: auto;
 }
+
 span{
     font-size: 2em;
     font-weight: bold;
     color:white;
 
 }
+
 .usu{
     margin-top: 1.2em;
     width: 20em;
@@ -132,6 +140,7 @@ table{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     
 }
+
 td{
     border-right: rgb(150, 73, 1) solid 0.3em;
     border-bottom: rgb(150, 73, 1) solid 0.3em;
@@ -141,7 +150,8 @@ td{
     text-align: left;
     padding: 1em 5em 1em 3em;
 
-    }
+}
+
 th{
     border-right: rgb(150, 73, 1) solid 0.3em;
     border-bottom: rgb(150, 73, 1) solid 0.3em;
@@ -151,22 +161,28 @@ th{
     background-color: white;
     width:fit-content;
 }
+
 .datos {
     width: 15em;
 }
+
 .imgpiso{
     width: 30em;
 }
+
 .cerrar_sesion {
     width: 1em;
 }
+
 .nada{
     width: auto;
     margin-left: 0em;
 }
+
 .nada:hover{
     background-color: transparent;
 }
+
 #tabla {
     border:solid gray 0em;
     width:fit-content;
@@ -178,12 +194,15 @@ th{
     margin-top: 6em;
     clear: both;
 }
+
 .nadalogo:hover {
     background-color: transparent;
 }
+
 b{
     color:black;
 }
+
 button {
     background-color: rgba(126, 124, 124, 0.411);
     padding: 5px;
@@ -199,6 +218,15 @@ button {
     font-weight: bold;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+
 .imgpiso{
     width: 32em;
+}
+
+.error-message {
+    color: white;
+    padding-top: 2em;
+    padding-left: 5em;
+    background-color:rgb(174,105,56);
+    font-size: 3em;
 }

@@ -4,6 +4,7 @@
     color: #fff;
     font-family: Arial, sans-serif;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -12,6 +13,7 @@ body{
     color: #fff;
     font-family: Arial, sans-serif;
 }
+
 #titulo{
     text-align: center;
     padding-top: 3em;
@@ -22,6 +24,7 @@ body{
     margin-left: 41em;
     margin-bottom: 1em;
 }
+
 #logo{
     width: 35em;
     border:0px yellow solid;
@@ -36,6 +39,7 @@ body{
     color: #fff;
     font-family: Arial, sans-serif;
 }
+
 table{
     
     clear: both;
@@ -43,6 +47,7 @@ table{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     
 }
+
 td{
     border-right: rgb(150, 73, 1) solid 0.3em;
     border-bottom: rgb(150, 73, 1) solid 0.3em;
@@ -52,7 +57,8 @@ td{
     text-align: left;
     /*padding: 1em 5em 1em 5em;*/
 
-    }
+}
+
 th{
     border-right: rgb(150, 73, 1) solid 0.3em;
     border-bottom: rgb(150, 73, 1) solid 0.3em;
@@ -62,18 +68,22 @@ th{
     background-color: white;
     width:fit-content;
 }
+
 .datos {
     width: 15em;
     padding: 1em 3em 1em 5em;
 }
+
 .imgpiso{
     width: 38em;
 }
+
 .anadir {
     width: 10em;
     padding-left: 5em;
 
 }
+
 .anadir1 {
     width: 15em;
     padding-left: 4em;
@@ -85,7 +95,6 @@ border: solid 0em rgb(67, 15, 119);
 padding-left: 0em;
 margin: 0.5em 10em 0em 19em ;
 clear: both;
-
 }	
 
 #menu1 ul  {
@@ -112,14 +121,17 @@ text-decoration: none
 #menu1 ul li a:hover {
     color:brown;
 }
+
 a{
 color:white;
 }
+
 a:hover{
     background-color:rgba(255, 192, 203);
     border-radius: 1em;
     color:brown;
 }
+
 a .no:hover{
     background-color: transparent;
 }
@@ -127,18 +139,22 @@ a .no:hover{
 .cerrar_sesion {
     width: 1em;
 }
+
 .cerrar_sesion1 {
     width: 1.5em;
     margin-top: 7em;
     margin-left: 15em;
 }
+
 .nada{
     width: auto;
     margin-left: 0em;
 }
+
 .nada:hover{
     background-color: transparent;
 }
+
 #tabla {
     border:solid gray 0em;
     width:fit-content;
@@ -150,6 +166,7 @@ a .no:hover{
     margin-top: 6em;
     clear: both;
 }
+
 .tabla1{
     border:solid gray 0em;
     width:fit-content;
@@ -161,9 +178,11 @@ a .no:hover{
     margin-top: 2em;
     clear: both;
 }
+
 .nadalogo:hover {
     background-color: transparent;
 }
+
 .tabla2{
     border:solid gray 0em;
     width:fit-content;
@@ -175,9 +194,11 @@ a .no:hover{
     margin-top: 3em;
     clear: both;
 }
+
 b{
     color:black;
 }
+
 button {
     background-color: rgba(126, 124, 124, 0.411);
     padding: 2px;
@@ -193,14 +214,17 @@ button {
     font-weight: bold;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+
 #filtrar{
     clear:both;
     text-align: center;
 
 }
+
 input{
     color:black;
 }
+
 .error-message {
     color: white;
     padding-top: 2em;
@@ -208,6 +232,15 @@ input{
     background-color:rgb(174,105,56);
     font-size: 3em;
 }
+
 .imgpison {
     width: 20em;
+}
+
+.error-message2 {
+    color: white;
+    padding-top: 2em;
+    padding-left: 2em;
+    background-color:rgb(174,105,56);
+    font-size: 3em;
 }
