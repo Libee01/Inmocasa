@@ -7,7 +7,7 @@ create table usuario (
 );
 
 create table pisos (
-    Codigo_piso int primary key,
+    codigo_piso int auto_increment primary key,
     calle varchar (40) not null,
     numero int not null,
     piso int not null,
