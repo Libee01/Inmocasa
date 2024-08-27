@@ -11,7 +11,7 @@
     </div>  
     <?php
         $id= $_POST["id_usuario"];
-        //conectar con el sercvidor de base de datos
+        //conectar con el servidor de base de datos
         $conexion = mysqli_connect("localhost", "root", "rootroot")
         or die ("No se puede conectar con el servidor");
         
@@ -20,7 +20,7 @@
         mysqli_select_db ($conexion, "inmobiliaria") or die ("No se puede conectar a la base de datos");
 
         $query="delete from usuario where usuario_id=$id";
-        //echo $query.<br> ; para comprobar errores de mysql
+        
 
         if(mysqli_query($conexion,$query))
         {
