@@ -59,3 +59,6 @@
   🔸comprador@comprador.es: usuario1 -> tipo_usuario: comprador
   <br><br>
   🔸vendedor@vendedor.es: usuario2 -> tipo_usuario: vendedor
+<div align="right">
+  © 2024 INMOCASA
+</div>
