@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/mensajes.css">
+    <link rel="icon" href="../../img/logo.ico" type="image/x-icon">
     <title>Añadir piso</title>
 </head>
 <body>
@@ -73,13 +74,12 @@
             mysqli_select_db ($conexion, "inmobiliaria") or die ("No se puede conectar a la base de datos");
 
             $query="insert into pisos (calle,numero,piso,puerta,cp,metros,zona,precio,imagen,usuario_id) values ('$calle','$numero','$piso','$puerta','$codigop','$metros','$zona','$precio','$nombreFichero','$usuid')";
-            //echo "$query.<br> ";
-
+            
             
             if(mysqli_query($conexion,$query))
             {
                 
-                echo "<div class='borrado'>Piso añadido corectamente</div>";
+                echo "<div class='borrado'>Piso añadido correctamente</div>";
                 echo "<div class='mensaje'><img src='../../img/arriba1.png' class='ok'></div>";
             }   
             else
@@ -88,7 +88,7 @@
                 echo "<div class='mensaje'><img src='../../img/abajo.png' class='ok'></div>";
                 
             }
-            //cerrrar
+            //cerrar
                 mysqli_close($conexion);
             ?>
         </div>

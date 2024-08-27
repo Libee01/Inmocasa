@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/mensajes.css">
-    </style>
+    <link rel="icon" href="../../img/logo.ico" type="image/x-icon">
     <title>Borrar piso</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
     </div>
     <?php
         $id_piso = $_POST['id_piso'];
-        //conectar con el sercvidor de base de datos
+        //conectar con el servidor de base de datos
         $conexion = mysqli_connect("localhost", "root", "rootroot")
         or die ("No se puede conectar con el servidor");
         
@@ -21,8 +21,8 @@
         
         mysqli_select_db ($conexion, "inmobiliaria") or die ("No se puede conectar a la base de datos");
 
-        $query="delete from pisos where Codigo_piso='$id_piso'";
-        //echo $query.<br> ; para comprobar errores de mysql
+        $query="delete from pisos where codigo_piso='$id_piso'";
+        
 
         if(mysqli_query($conexion,$query))
         {

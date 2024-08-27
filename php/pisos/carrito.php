@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pisos</title>
     <link rel="stylesheet" href="../../css/listarpiso.css">
+    <link rel="icon" href="../../img/logo.ico" type="image/x-icon">
+    <title>Pisos</title>
 </head>
 <body>
     <div id="titulo">
@@ -44,10 +45,10 @@ mysqli_select_db ($conexion, "inmobiliaria") or die ("No se puede conectar a la 
 $ids_pisos = implode(",", $_SESSION['carrito']);
 
 // Construir la consulta SQL
-$query = "SELECT * FROM pisos WHERE Codigo_piso IN ($ids_pisos)";
+$query = "SELECT * FROM pisos WHERE codigo_piso IN ($ids_pisos)";
 
 // Ejecutar la consulta
-$consulta = mysqli_query($conexion, $query) or die ("<p class='error-message'>No hay pisos añadidos en el carrito</p>");
+$consulta = mysqli_query($conexion, $query) or die ("<p class='error-message'> No hay pisos añadidos en el carrito </p>");
 
 // Mostrar el resultado de la consulta
 $nfilas = mysqli_num_rows($consulta);
@@ -72,11 +73,11 @@ if ($nfilas == 0) {
         echo "<td class='imgpiso'><img class='imgpiso' src='img/" . $resultado['imagen'] . "'/></td>";
         echo "<td class='anadir'>
                 <form action='eliminar.php' method='POST'>
-                <input type='hidden' name='id_piso' value='" . $resultado['Codigo_piso'] . "'> 
+                <input type='hidden' name='id_piso' value='" . $resultado['codigo_piso'] . "'> 
                 <button type='submit' name='submit'>Eliminar</button> </form>
                 <form action='comprar.php' method='POST'><br><br>
-                <input type='hidden' name='id_piso' value='" . $resultado['Codigo_piso'] . "'> 
-                <input type='hidden' name='id_usuario' value='" . $resultado['usuario_id'] . "'> 
+                <input type='hidden' name='id_piso' value='" . $resultado['codigo_piso'] . "'> 
+                <input type='hidden' name='id_usuario' value='" . $_SESSION['userid'] . "'> 
                 <input type='hidden' name='precio' value='" . $resultado['precio'] . "'> 
                 <button type='submit' name='submit'>Comprar</button> </form></td>";
         echo "</tr>";

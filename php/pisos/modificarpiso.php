@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/mensajes.css">
+    <link rel="icon" href="../../img/logo.ico" type="image/x-icon">
     <title>Modificar piso</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
         
         mysqli_select_db ($conexion, "inmobiliaria") or die ("No se puede conectar a la base de datos");
 
-        $query="select * from pisos where Codigo_piso='$id_piso'";
+        $query="select * from pisos where codigo_piso='$id_piso'";
         //echo $query.<br> ; para comprobar errores de mysql
 
         $consulta = mysqli_query($conexion,$query) or die ("Fallo de la consulta");
@@ -36,7 +37,7 @@
             $resultado = mysqli_fetch_array($consulta);
             //echo "Usuario correcto";
             echo "<div class='uno'><form action='modificarpiso2.php' enctype='multipart/form-data' method='POST'>";
-            echo "<input type='hidden' name='textcodigo' value=".$resultado['Codigo_piso']."><br>";
+            echo "<input type='hidden' name='textcodigo' value=".$resultado['codigo_piso']."><br>";
             echo "<b>Calle:</b> <pre><input type='text' name='textcalle' value=".$resultado['calle']."></pre>";
             echo "<b>Número:</b> <pre><input type='text' name='textnumero' value=".$resultado['numero']."></pre>";
             echo "<b>Piso:</b> <pre><input type='text' name='textpiso' value=".$resultado['piso']."></pre>";

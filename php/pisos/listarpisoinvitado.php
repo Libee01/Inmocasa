@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pisos</title>
     <link rel="stylesheet" href="../../css/listarpisoinvitado.css">
+    <link rel="icon" href="../../img/logo.ico" type="image/x-icon">
+    <title>Pisos</title>
 </head>
 <body>
     <div id="titulo">
@@ -46,7 +47,7 @@
             while ($resultado = mysqli_fetch_array($consulta)) {
                 echo "<tr>";
                 echo "<td class='datos'>". "<ul style='color:black; font-size:1.2em;'><b>Ubicado en</b></ul>". 
-                "<li style='color:black;'><b>Código Piso: </b>". $resultado['Codigo_piso'] ."</li>".
+                "<li style='color:black;'><b>Código Piso: </b>". $resultado['codigo_piso'] ."</li>".
                 "<li style='color:black;'><b>Calle: </b>". $resultado['calle'] ."</li>".
                 "<li style='color:black;'><b>Número: </b>". $resultado['numero'] ."</li>".
                 "<li style='color:black;'><b>Piso: </b>". $resultado['piso'] ."</li>".

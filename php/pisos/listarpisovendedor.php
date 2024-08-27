@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pisos</title>
     <link rel="stylesheet" href="../../css/vendedores.css">
+    <link rel="icon" href="../../img/logo.ico" type="image/x-icon">
+    <title>Pisos</title>
 </head>
 <body>
     <div id="titulo">
@@ -25,7 +26,7 @@
                 </li>
 
                 <li>
-                    <a href="../index.php" class="nada"><img src="../../img/cerrar_sesion.png" alt="" class="cerrar_sesion"></a>
+                    <a href="../../index.php" class="nada"><img src="../../img/cerrar_sesion.png" alt="" class="cerrar_sesion"></a>
                 </li>
             </ul>
     </div>
@@ -35,7 +36,7 @@
         session_start();
         $usuid = $_SESSION['userid'];
 
-        //conectar con el sercvidor de base de datos
+        //conectar con el servidor de base de datos
         $conexion = mysqli_connect("localhost", "root", "rootroot")
         or die ("No se puede conectar con el servidor");
         
@@ -44,15 +45,15 @@
         mysqli_select_db ($conexion, "inmobiliaria") or die ("No se puede conectar a la base de datos");
 
         $query="select * from pisos where usuario_id=$usuid";
-        //echo $query.<br> ; para comprobar errores de mysql
+        
 
         $consulta = mysqli_query($conexion,$query) or die ("Fallo de la consulta");
         //Mostrar el resultado de la consulta
-        $nfilas =mysqli_num_rows($consulta); //devuelve el numero de filas
+        $nfilas = mysqli_num_rows($consulta); //devuelve el numero de filas
 
         if($nfilas == 0)
         {
-            echo "Error el piso no existe";
+            echo "<p class='error-message'>No hay pisos tuyos en venta</p>";
         }  
          else
         {
@@ -73,7 +74,7 @@
                 "</td>";
                 echo "<td class='imgpiso'><img class='imgpiso' src='img/" . $resultado['imagen'] . "'/></td>";
                 echo "<td class='anadir'><form action='./modificarpiso.php' method='POST'>
-                <input type='hidden' name='id_piso' value='" . $resultado['Codigo_piso'] . "'>
+                <input type='hidden' name='id_piso' value='" . $resultado['codigo_piso'] . "'>
                 <button type='submit'>Modificar</button></form></td>";
                 echo "</tr>";
             }
